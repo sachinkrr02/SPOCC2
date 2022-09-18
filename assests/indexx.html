@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SPOCC'22 Registration</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <div id="sec1" class="hide">
+            <img src="spocc.png" alt="">
+            <p>Team Cloud Computing Cell presents to you its most anticipated and foretold event "SPOCC'22" - its recruitment drive. 
+                A one time event to embark your journey towards a glistening imminent ventures and to become a part of a visionary team. <br>
+                <br>
+                Be fervorous, and steer course of your embarked ship or gaze at it as goes beyond the horizon. </p>
+        </div>
+
+        <div id="sec2">
+            <form action="" id="SPOCC">
+                <div class="alert">You have Successfully Regsitered</div>
+                <h1>Regsiter Now</h1>
+                <div class="row">
+                    <div class="inputBox">
+
+                        <input type="text" id="name" placeholder="Name" required />
+                    </div>
+
+                    <div class="inputBox">
+
+                        <input type="text" id="phone" placeholder="Phone No." required pattern=".{10}" required />
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="inputBox">
+
+                        <input type="email" id="cid" placeholder="College Email Id" required pattern="[a-z]+[0-9]+@akgec.ac.in" required/>
+                    </div>
+                    <div class="inputBox">
+
+                        <input type="text" id="domain" placeholder="Domain" required />
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="inputBox">
+
+                        <input type="text" id="branch" placeholder="Branch"  required/>
+                    </div>
+                    <div class="inputBox">
+
+                        <input type="text" id="section" placeholder="Section"  required pattern="[0-3]" required/>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="inputBox">
+
+                        <input type="text" id="rollno" placeholder="Roll No."  required pattern="21+[0-9].{10}" required/>
+                    </div>
+
+                    <div class="inputBox">
+
+                        <input type="text" id="studentno" placeholder="Student No."  required pattern="[0-9].{6}" required/>
+                    </div>
+                </div>
+                <div class="inputBox" id="check">
+                    <input type="checkbox" id="" placeholder="Student No." />
+                    <label for="">I agree to the <span>Terms and Conditions</span></label>
+                </div>
+                <div class="inputBox">
+                    <button type="submit">Submit</button>
+                </div>
+                <p>Designed for Cloud Computing Cell</p>
+            </form>
+        </div>
+    </div>
+  
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
+    <script src="mail.js"></script>
+    <script src="ball.js"></script>
+</body>
+
+</html>
